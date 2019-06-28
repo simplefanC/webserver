@@ -35,7 +35,6 @@ public class ParseDemo01 {
 			System.out.println(p.getName()+"-->"+p.getAge());
 		}
 
-
 	}
 
 }
