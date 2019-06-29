@@ -2,7 +2,7 @@
 <web-app>
     <servlet>
         <servlet-name>loginServlet</servlet-name>
-        <servlet-class>com.simplefanc.servlet.LoginServlet</servlet-class>
+        <servlet-class>com.simplefanc.user.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
@@ -11,11 +11,20 @@
 
     <servlet>
         <servlet-name>registerServlet</servlet-name>
-        <servlet-class>com.simplefanc.servlet.RegisterServlet</servlet-class>
+        <servlet-class>com.simplefanc.user.RegisterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/register</url-pattern>
         <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>otherServlet</servlet-name>
+        <servlet-class>com.simplefanc.user.OtherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>otherServlet</servlet-name>
+        <url-pattern>/other</url-pattern>
     </servlet-mapping>
 </web-app>
